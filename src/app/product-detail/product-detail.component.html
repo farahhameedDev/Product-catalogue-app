@@ -1,0 +1,13 @@
+<div *ngIf="product">
+    <h3>{{ product.name | uppercase }} Details</h3>
+    <div><span>id: </span>{{product.id}}</div>
+    <div>
+      <label>name:
+        <input [(ngModel)]="product.name" placeholder="name">
+      </label>
+    </div>
+    <!-- <div>
+      <button type="submit" [(ngSubmit)] name="update">Update</button>
+    </div> -->
+</div>
+    
